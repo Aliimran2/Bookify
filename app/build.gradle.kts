@@ -49,4 +49,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.androidpdfviewerv1)
+    implementation ("com.airbnb.android:lottie:6.6.0")
 }
