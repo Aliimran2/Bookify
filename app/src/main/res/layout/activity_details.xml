@@ -5,11 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".DetailsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/cview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -30,11 +40,11 @@
             app:layout_constraintTop_toTopOf="@+id/materialCardView2" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/mAuthorName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Nimra Ahmad"
+            android:text="Daniel Kahnman"
             app:layout_constraintStart_toStartOf="@+id/mBookTitle"
             app:layout_constraintTop_toBottomOf="@+id/mBookTitle" />
 
@@ -54,7 +64,7 @@
             app:iconGravity="textStart"
             app:layout_constraintEnd_toEndOf="@+id/mBookTitle"
             app:layout_constraintStart_toStartOf="@+id/mBookTitle"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/mAuthorName"
             app:strokeColor="@color/black" />
 
         <com.google.android.material.card.MaterialCardView
@@ -71,7 +81,7 @@
                 android:layout_height="220dp">
 
                 <ImageView
-                    android:id="@+id/book_image_view"
+                    android:id="@+id/mBookImgView"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/sample_book_description"
@@ -95,17 +105,18 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materialCardView"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             app:cardBackgroundColor="@color/purple_500"
             app:cardCornerRadius="100dp"
             app:contentPadding="20dp"
-            app:layout_constraintBottom_toBottomOf="@+id/title_text_view"
+            app:layout_constraintBottom_toBottomOf="@+id/cview"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/title_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/cview"
             app:strokeWidth="0dp">
 
 
@@ -118,7 +129,6 @@
                 app:tint="@color/white" />
         </com.google.android.material.card.MaterialCardView>
 
-
         <TextView
             android:id="@+id/title_text_view"
             android:layout_width="0dp"
@@ -128,13 +138,12 @@
             android:ellipsize="end"
             android:fontFamily="@font/roboto_bold"
             android:maxLines="1"
-            android:text="@string/sample_title"
+            android:text="Book Description"
             android:textColor="@color/purple_500"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/materialCardView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+            app:layout_constraintTop_toBottomOf="@+id/cview" />
 
 
         <LinearLayout
@@ -145,7 +154,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-
             app:layout_constraintTop_toBottomOf="@id/title_text_view">
 
             <com.google.android.material.divider.MaterialDivider

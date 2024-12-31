@@ -37,7 +37,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/bView"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:background="@color/book_handle"

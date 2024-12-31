@@ -33,7 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/book_image_view"
+                    android:id="@+id/mBookImgView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/sample_book_description"
@@ -48,7 +48,7 @@
                     app:srcCompat="@drawable/book_2" />
 
                 <View
-                    android:id="@+id/view"
+                    android:id="@+id/bView"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:background="@color/book_handle"
