@@ -70,16 +70,17 @@
                 app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/mReadBookBtn"
+                style="@style/Widget.Material3.Button.IconButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:textColor="@color/white"
                 android:backgroundTint="@color/black"
                 android:text="Read Book"
-                style="@style/Widget.Material3.Button.IconButton"
+                android:textColor="@color/white"
                 app:icon="@drawable/ic_next"
-                app:iconSize="30dp"
                 app:iconGravity="textEnd"
+                app:iconSize="30dp"
                 app:iconTint="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintStart_toStartOf="parent"
