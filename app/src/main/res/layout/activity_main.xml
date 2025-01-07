@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This is main layout as the screen appears it will be shown
+here we will have horizontal recycler view category wise
+we can scroll horizontally or
+we can go to the category activity
+by clicking See All
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

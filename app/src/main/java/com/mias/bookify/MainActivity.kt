@@ -3,6 +3,7 @@ package com.mias.bookify
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.mias.bookify.databinding.ActivityMainBinding
+import com.mias.bookify.models.BooksModel
 
 class MainActivity : AppCompatActivity() {
 

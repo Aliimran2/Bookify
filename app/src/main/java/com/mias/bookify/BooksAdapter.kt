@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.mias.bookify.databinding.LayoutHomeBinding
+import com.mias.bookify.models.BooksModel
 
 const val BOOK_IMAGE = "book_image"
 const val BOOK_TITLE = "book_title"

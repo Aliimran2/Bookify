@@ -1,5 +1,7 @@
 package com.mias.bookify
 
+import com.mias.bookify.models.BooksModel
+
 object DataProvider {
 
     val list : ArrayList<BooksModel> = ArrayList()
